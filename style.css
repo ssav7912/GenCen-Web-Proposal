@@ -1,0 +1,187 @@
+#escape {
+  position: fixed;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  right: 0%;
+  justify-self: right;
+  background-color: #eb4646;
+  color: white;
+  border-radius: 5px;
+  border: darkslategray, 1pt;
+}
+
+#escape img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 1.7fr 0.3fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Main Main Main Main"
+    "footer footer footer footer";
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+}
+p {
+  font-family: 'Pridi', serif;
+}
+form {
+  font-family: 'Pridi', serif;
+}
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 50px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Title Title Title Title Title"
+    "Services About Contact . Incognito";
+
+
+  grid-area: Header;
+  background-color: #633885;
+  color: white;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.Header a {
+  text-decoration: none;
+  color: white;
+}
+
+.Services { grid-area: Services; }
+
+.About { grid-area: About; }
+
+.Contact { grid-area: Contact; }
+
+.Incognito { grid-area: Incognito; }
+
+.Title { 
+grid-area: Title;
+font-size: 30pt;
+font-family: 'Signika', sans-serif;
+padding-left: 10px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr 1.1fr 0.4fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". . Appt Other";
+  grid-area: Main;
+  border-radius: 25px;
+  padding: 30px 60px;
+  background-color: #35a0c8;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 30pt;
+}
+
+.Appt { grid-area: Appt;}
+.Other { grid-area: Other;}
+
+.Main a:link, .Main a:visited {
+  background-color: #633885;
+  padding: 14px 25px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  
+}
+.Main a:hover, .Main a:active {
+  background-color: #c490d1;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 0px 10px;
+
+  grid-area: Main;
+  background-color: #35a0c8;
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+}
+.book form {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-area: span;
+}
+.book fieldset{
+  display: inline-grid;
+  padding-right: 25%;
+  font-size: 14pt;
+}
+
+.Appthead {
+  grid-row-start: 1;
+  grid-area: span;
+ }
+
+ #about {
+   display: grid;
+   grid-area: Main;
+   padding-left: 60px;
+ }
+
+ #about li {
+   font-family: 'Pridi', serif;
+ }
+ .services {
+  gap: 0px 0px;
+  grid-area: Main;
+  border-radius: 25px;
+  padding: 30px 60px;
+  background-color: #35a0c8;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+.services a:link, .Main a:visited {
+  background-color: #633885;
+  padding: 14px 25px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.services a:hover, .Main a:active {
+  background-color: #c490d1;
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: #633885;
+  color: white;
+  line-height: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  font-size: 8pt; 
+  height: 100px;
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Book an Appointment</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&family=Rubik&family=Signika:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <button type="button" id="escape"><img src="escape.png" alt="->"></button>
+  <div class="grid-container">
+    <nav class="Header">
+      <header class="Title"> <h1><a href="index.html"> The Gender Centre</a></h1></header>
+      <div class="Services"><h3><a href="services.html">Services</a></h3></div>
+      <div class="About"><h3><a href="about.html">About<a/></h3></div>
+      <div class="Contact"><h3><a href="contact.html">Contact</a></h3></div>
+      <div class="Incognito"><h3>Incognito</h3></div>
+
+    </nav>
+    <article class="book">
+      <header class="Appthead">
+      <h2> Book an Appointment </h2>
+      <p>This is an expression of interest for our specialist counselors. Once we receive your expression, we will contact you and ask you to fill out further details.</p>
+      </header>
+      <form>
+      <fieldset class="input">
+        <legend>Personal Details </legend>
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="Lname">Last Name:</label>
+        <input type="text" id="Lname" name="Lname">
+        <br>
+        <label for="gender">Gender (Select what best fits):</label>
+        <select id="gender" name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Non-Binary">Non-Binary</option>
+          <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <label for="cob">Country Of Birth:</label>
+        <input type="text" id="cob" name="countrybirth">
+        <br>
+        <label for="resident">Australian Resident:</label>
+        <select id="resident" name="resident">
+          <option value="Resident">Yes</option>
+          <option value="Non-resident">No</option>
+        </select>
+      </fieldset>
+      <fieldset class="contact">
+      <legend>Contact Details</legend>
+      <label for="email">Email Address: </label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile">
+      <br>
+      <label for="Address">Address:</label>
+      <input type="text" id="Address" name="Address">
+      <br>
+      <label for="Postcode">Postcode:</label>
+      <input type="number" id="Postcode" name="Postcode">
+      
+
+      </fieldset>
+      </form>
+    </article>
+        <footer class="footer">
+      <p> Contact us: </p>
+      <p> 41-43 Parramatta Road Annandale NSW 2038 </p>
+      <p> (02) 9519 7599 </p>
+
+    </footer>
+  </div>
+</html>
